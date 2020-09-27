@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="676.0" prefWidth="700.0" style="-fx-border-color: grey; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.MainScreenWCalendar">
+   <children>
+      <AnchorPane layoutX="25.0" layoutY="270.0" prefHeight="252.0" prefWidth="649.0" style="-fx-border-color: grey; -fx-border-radius: 20px;" styleClass="b">
+         <children>
+            <TableView fx:id="AppointmentsTable" layoutX="22.0" layoutY="10.0" prefHeight="232.0" prefWidth="605.0">
+              <columns>
+                <TableColumn fx:id="aptIDColumn" prefWidth="55.0" text="Apt ID" />
+                <TableColumn fx:id="CustomerIdColumn" prefWidth="89.0" text="Customer Id" />
+                  <TableColumn fx:id="descriptionColumn" prefWidth="202.0" text="Description" />
+                  <TableColumn fx:id="startTimeColumn" prefWidth="133.0" text="Start Time" />
+                  <TableColumn fx:id="endTimeColumn" prefWidth="125.0" text="End Time " />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="33.0" layoutY="27.0" text="Appointment System ">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddCustomerButton" layoutX="58.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#AddCustomerButton" text="Add Customer">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="ModifyCustomerButton" layoutX="169.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#ModifyCustomerButton" text="Modify Customer">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="AddAppointmentButton" layoutX="375.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#AddAppointmentButton" text="Add Appointment ">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="ModifyAppointmentButton" layoutX="500.0" layoutY="560.0" mnemonicParsing="false" onMouseClicked="#ModifyAppointmentButton" text="Modify Appointment ">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="635.0" layoutY="628.0" mnemonicParsing="false" onMouseClicked="#ExitSystemButton" text="Exit">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="33.0" layoutY="97.0" text="Customer:">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="deleteCustomerBtn" layoutX="58.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#deleteCustomerBtn" text="Delete Customer">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteAppointmentBtn" layoutX="375.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#deleteAppointmentBtn" text="Delete Appointment ">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="reportsButton" layoutX="560.0" layoutY="628.0" mnemonicParsing="false" onMouseClicked="#reportsButton" text="Reports">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="CustomerTableView" layoutX="25.0" layoutY="118.0" prefHeight="87.0" prefWidth="649.0">
+        <columns>
+          <TableColumn fx:id="CustomerID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="CustomerName" prefWidth="474.0" text="Customer Name" />
+            <TableColumn fx:id="customerAddressIDColumn" maxWidth="1.0" minWidth="0.0" prefWidth="1.0" text="aID" visible="false" />
+        </columns>
+      </TableView>
+      <Label layoutX="375.0" layoutY="534.0" text="(Select a Customer to add an Appointment)">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="monthAptButton" layoutX="227.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#monthAptButton" text="Appointments for the next 30 days">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="weekAptButton" layoutX="463.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#weekAptButton" text="Appointments for the next 7 days">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="showAllAppointments" layoutX="49.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#showAllAppointments" text="Show All Appointments">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

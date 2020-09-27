@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="378.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddCustomer">
+   <children>
+      <Button fx:id="AddCustomerButton" layoutX="83.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#AddCustomerButton" text="Submit">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="CancelCustomerAddButton" layoutX="164.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#CancelCustomerAddButton" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="10.0" layoutY="24.0" text="Add Customer">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerIDLabel" layoutX="10.0" layoutY="76.0" text="Customer ID:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerNameLabel" layoutX="10.0" layoutY="106.0" text="Customer Name:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerAddressLabel" layoutX="10.0" layoutY="136.0" text="Customer Address:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerCityLabel" layoutX="10.0" layoutY="166.0" text="Customer City:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerZipLabel" layoutX="10.0" layoutY="196.0" text="Customer Zip:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="226.0" text="Customer Country:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerPhoneLabel" layoutX="10.0" layoutY="256.0" text="Customer Phone:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CustomerIDTxtbox" disable="true" layoutX="145.0" layoutY="72.0" promptText="Auto GenID" />
+      <TextField fx:id="CustomerNameTxtbox" layoutX="145.0" layoutY="102.0" />
+      <TextField fx:id="CustomerAddressTxtbox" layoutX="145.0" layoutY="132.0" />
+      <ComboBox fx:id="CustomerCity" layoutX="145.0" layoutY="162.0" onAction="#setCountryTextbox" prefWidth="150.0" />
+      <TextField fx:id="CustomerZipTxtbox" layoutX="145.0" layoutY="192.0" />
+      <TextField fx:id="CustomerCountryTxtbox" disable="true" editable="false" layoutX="145.0" layoutY="222.0" />
+      <TextField fx:id="CustomerPhoneTxtbox" layoutX="145.0" layoutY="252.0" />
+   </children>
+</AnchorPane>

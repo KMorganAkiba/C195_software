@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ModifyAppointment">
+   <children>
+      <Button fx:id="ModifyAppointmentButton" layoutX="139.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#ModifyAppointmentButton" text="Save">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="CancelModifyAppointmentButton" layoutX="194.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#CancelModifyAppointmentButton" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="14.0" text="Modify Appointment ">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="78.0" text="Appointment ID:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="108.0" text="Appointment Date:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="138.0" text="Appointment Time:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="168.0" text="Agent:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="198.0" text="Location:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="228.0" text="Type of Appointmnet:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modAptID" layoutX="160.0" layoutY="74.0" />
+      <DatePicker fx:id="modCalenderDate" layoutX="160.0" layoutY="104.0" prefHeight="25.0" prefWidth="174.0" />
+      <ComboBox fx:id="modAptTimeSelection" layoutX="160.0" layoutY="134.0" prefWidth="150.0" />
+      <ComboBox fx:id="modAgentSelection" layoutX="160.0" layoutY="164.0" onAction="#setmodLocation" prefWidth="150.0" />
+      <TextField fx:id="modLocationTxtBox" layoutX="160.0" layoutY="194.0" />
+      <ComboBox fx:id="modTypeOfAppointment" layoutX="160.0" layoutY="224.0" prefHeight="25.0" prefWidth="213.0" />
+   </children>
+</AnchorPane>

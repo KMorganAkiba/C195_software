@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.AddAppointment">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Add Appointment">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="78.0" text="Customer:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="customerNametxtbox" disable="true" editable="false" layoutX="160.0" layoutY="74.0" />
+      <Label layoutX="14.0" layoutY="108.0" text="Appointment Date:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <DatePicker fx:id="calenderDate" layoutX="160.0" layoutY="104.0" />
+      <Label layoutX="14.0" layoutY="168.0" text="Agent:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="14.0" layoutY="138.0" text="appointment Time:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="aptTimeSelection" layoutX="160.0" layoutY="134.0" prefWidth="150.0" />
+      <ComboBox fx:id="agentSelection" layoutX="160.0" layoutY="164.0" onAction="#setLocation" prefWidth="150.0" />
+      <Label layoutX="14.0" layoutY="228.0" text="Type of Appointment:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="typeOfAppointment" layoutX="160.0" layoutY="224.0" prefHeight="25.0" prefWidth="213.0" />
+      <Label layoutX="14.0" layoutY="198.0" text="location:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="locationTxtBox" disable="true" editable="false" layoutX="160.0" layoutY="194.0" />
+      <Button fx:id="addAppointmentButton" layoutX="139.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#AddAppointmentButton" text="Add">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelAddAppointmentButton" layoutX="194.0" layoutY="307.0" mnemonicParsing="false" onMouseClicked="#CancelAddAppointmentButton" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

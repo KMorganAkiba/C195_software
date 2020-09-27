@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="742.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.Reports">
+   <children>
+      <Button fx:id="exitReports" layoutX="686.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#exitReports" text="Exit">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="reportViewArea" editable="false" layoutX="18.0" layoutY="97.0" prefHeight="242.0" prefWidth="713.0" />
+      <Label layoutX="240.0" layoutY="14.0" text="Select a Report to view">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="report1Btn" layoutX="18.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#report1Btn" text="Number of Appointments by Month">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="report2Btn" layoutX="285.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#report2Btn" text="Schedule by Agent">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="report3Btn" layoutX="448.0" layoutY="57.0" mnemonicParsing="false" onMouseClicked="#report3Btn" text="Number of Appointments per Customer">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="378.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewController.ModifyCustomer">
+   <children>
+      <Label layoutX="10.0" layoutY="22.0" text="Modify Customer Info">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="76.0" text="CustomerID:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="106.0" text="Customer Name:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="10.0" layoutY="136.0" text="Customer Address:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font></Label>
+
+      <Button fx:id="ModifyCustomerSaveButton" layoutX="83.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#ModifyCustomerSaveButton" text="Submit">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="CancelModifyCustomerButton" layoutX="164.0" layoutY="312.0" mnemonicParsing="false" onMouseClicked="#CancelModifyCustomerButton" text="Cancel">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="10.0" layoutY="196.0" text="Customer Zip:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="256.0" text="Customer Phone:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="166.0" text="Customer City:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ModCustomerIDTxtbox" disable="true" layoutX="145.0" layoutY="72.0" />
+      <TextField fx:id="ModCustomerNameTxtBox" layoutX="145.0" layoutY="102.0" />
+      <TextField fx:id="ModCustomerAddressTxtbox" layoutX="145.0" layoutY="132.0" />
+      <ComboBox fx:id="ModCustomerCityBox" layoutX="145.0" layoutY="162.0" onAction="#setModCustomerCountryTxtbox" prefWidth="150.0" />
+      <TextField fx:id="ModCustomerZipTxtbox" layoutX="145.0" layoutY="192.0" />
+      <TextField fx:id="ModCustomerCountryTxtbox" disable="true" layoutX="145.0" layoutY="222.0" />
+      <TextField fx:id="ModCustomerPhoneTxtbox" layoutX="145.0" layoutY="252.0" />
+      <Label layoutX="10.0" layoutY="226.0" text="Customer Country:">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addressIDTextbox" layoutX="76.0" layoutY="339.0" visible="false" />
+   </children>
+</AnchorPane>
